@@ -1,5 +1,7 @@
 package com.zou.core;
 
+import java.util.Set;
+
 public class JsonConfigApplicationContext extends AbstractApplicationContext{
     @Override
     public Object getBean(String name) {
@@ -7,7 +9,7 @@ public class JsonConfigApplicationContext extends AbstractApplicationContext{
     }
 
     @Override
-    public String[] getBeanDefinitionNames() {
-        return new String[0];
+    public Set<BeanDefinition> getBeanDefinitionNames() {
+        return null;
     }
 }

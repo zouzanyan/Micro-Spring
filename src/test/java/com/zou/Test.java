@@ -12,7 +12,8 @@ public class Test {
 class Test2 {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext a = new AnnotationConfigApplicationContext("com.zou.entity");
-        a.initApplicationContext();
-        System.out.println(a.getBean("oppp"));
+//        System.out.println(a.getBean("qwe"));
+//        System.out.println(a.getBeanDefinitionNames());
+        System.out.println(a.getBeans());
     }
 }
